@@ -1,9 +1,11 @@
 import React from 'react';
 
-const MyLabel = () => {
-    return (
-        <p><b>Has dado {/* Ingresa aquí el número de clicks */} clicks</b></p>
-    );
+const MyLabel = ({ value }) => {
+  return (
+    <p>
+      <b>Has dado {value} clicks</b>
+    </p>
+  );
 };
 
 export default MyLabel;

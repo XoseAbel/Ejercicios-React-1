@@ -2,13 +2,13 @@ import React from 'react';
 
 // HOLA 2
 
-const Hijo = (props) => {
-    return (
-        <div className="alert alert-success">
-            <h4>Hijo</h4>
-            <h1></h1>
-        </div>
-    );
+const Hijo = props => {
+  return (
+    <div className='alert alert-success'>
+      <h4>Hijo</h4>
+      <h1>{props.title}</h1>
+    </div>
+  );
 };
 
 export default Hijo;
