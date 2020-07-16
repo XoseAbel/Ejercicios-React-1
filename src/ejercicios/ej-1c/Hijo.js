@@ -2,13 +2,18 @@ import React from 'react';
 
 // HOLA 2
 
-const Hijo = (props) => {
+class Hijo extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
     return (
-        <div className="alert alert-success">
-            <h4>Hijo</h4>
-            <h1></h1>
-        </div>
+      <div className='alert alert-success'>
+        <h4>Hijo</h4>
+        <h1>{this.props.text}</h1>
+      </div>
     );
-};
+  }
+}
 
 export default Hijo;
